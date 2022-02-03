@@ -51,12 +51,13 @@ body {
   align-items: center;
 }
 
-.check-btn, .trash-btn {
+.trash-btn,
+.complete-btn {
   border: none;
-  margin: 2px;
+  padding: 5px 5px 5px 5px;
 }
 
-.check-btn {
+.complete-btn {
   background: rgb(11, 212, 162);
 }
 

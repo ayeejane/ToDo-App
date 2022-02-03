@@ -11,13 +11,12 @@ function App() {
   const [toDoStatus, setToDoStatus] = useState("all");
   const [filterToDos, setFilterToDos] = useState([]);
 
-  //everytime  toDos state changes, run this function
+  //everytime  toDos state changes, status changes
   useEffect(() => {
     filterHandler();
   }, [toDos, toDoStatus]);
-  
 
-  //functions
+  //filter todo list
   const filterHandler = () => {
     switch(toDoStatus) {
       case 'done':

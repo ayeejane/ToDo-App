@@ -7,7 +7,6 @@ const ToDo = ({ text, toDo, toDos, setToDos }) => {
         setToDos(toDos.filter((el) => el.id !== toDo.id));
     };
 
-
     const completeToDo= () => {
         setToDos(
             toDos.map(item => {
@@ -23,8 +22,8 @@ const ToDo = ({ text, toDo, toDos, setToDos }) => {
 
     return(
         <div className="todo">  
-            <li className={'todo-item ${toDo.completed ? "completed" : ""}'}>{text}</li>
-            <button onClick={completeToDo} className="check-btn">
+            <li className={`todo-item ${toDo.completed ? "completed" : ""}`}>{text}</li>
+            <button onClick={completeToDo} className="complete-btn">
                 <i className="fas fa-check"></i>
             </button>
             <button onClick={deleteToDo} className="trash-btn">

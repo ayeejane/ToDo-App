@@ -25,7 +25,8 @@ const Form = ( { userInput, setUserInput, toDos, setToDos, setToDoStatus }) => {
                 <input 
                     value={userInput} 
                     onChange={userInputHandler} 
-                    type="text"/>
+                    type="text"
+                />
                 <button onClick={submitToDo} type="submit">
                     <i className="fas fa-plus-square"></i>
                 </button>
